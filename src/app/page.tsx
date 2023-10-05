@@ -1,5 +1,9 @@
 import React from 'react';
 
+import AboutMeSection from '@/components/AboutMeSection';
+import HeroSection from '@/components/HeroSection';
+import NavigationMain from '@/components/NavigationMain';
+import WorkedForSection from '@/components/WorkedForSection';
 import { SITE_TITLE } from '@/constants/constants';
 
 export const metadata = {
@@ -10,9 +14,11 @@ export const metadata = {
 
 async function Home() {
 	return (
-		<div>
-			<h1>Hello Traveler</h1>
-			<p>Sebastian, take this, it's dangerous to go alone.</p>
+		<div className="w-4/5 max-w-7xl">
+			<NavigationMain />
+			<HeroSection />
+			<AboutMeSection />
+			<WorkedForSection className="bg-theme-bg-gray-dark" />
 		</div>
 	);
 }
