@@ -2,32 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  .force-translate-x-0 {
-    transform: translateX(0%) !important;
-  }
-}
-
-
 @layer components {
-
-  /*
-  Example:
-  <span
-      data-text="Thanks for hovering! I'm a tooltip"
-      className="tooltip"
-  >
-		Tooltip
-	</span>
-  */
   .tooltip {
     position:relative; /* making the .tooltip span a container for the tooltip text */
     border-bottom:1px dashed #000; /* little indicater to indicate it's hoverable */
   }
+
   .tooltip:before {
     content: attr(data-text); /* here's the magic */
     position:absolute;
-
     /* vertically center */
     top:50%;
     transform:translateY(-50%);
@@ -46,6 +29,7 @@
 
     display:none; /* hide by default */
   }
+
   .tooltip:hover:before {
     display:flex;
     hyphens: auto;

@@ -1,5 +1,7 @@
 import { nextui } from '@nextui-org/react';
 
+const colors = require('tailwindcss/colors');
+
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -11,22 +13,68 @@ const config: Config = {
 	],
 	darkMode: 'class',
 	theme: {
-		// colors: {
-		// 	green: {
-		// 		50: '#F3F9F0',
-		// 		100: '#EAF5E6',
-		// 		200: '#D5EACC',
-		// 		300: '#BDDFAF',
-		// 		400: '#A3D18F',
-		// 		500: '#83C269',
-		// 		600: '#6AB54A',
-		// 		700: '#5B9C3F',
-		// 		800: '#4C8335',
-		// 		900: '#375E26',
-		// 		950: '#243E19',
-		// 	},
-		// },
 		extend: {
+			colors: {
+				'theme-primary': {
+					100: '#F2FCCC',
+					200: '#E3F99C',
+					300: '#CAED68',
+					400: '#ADDB41',
+					500: '#87C40D',
+					600: '#6EA809',
+					700: '#578D06',
+					800: '#417104',
+					900: '#335E02',
+				},
+				'theme-success': {
+					100: '#E6FBCE',
+					200: '#C7F8A0',
+					300: '#9CEA6D',
+					400: '#72D647',
+					500: '#3bbc15',
+					600: '#26A10F',
+					700: '#14870A',
+					800: '#076D06',
+					900: '#045A09',
+				},
+				'theme-info': {
+					100: '#D7E2FB',
+					200: '#B1C4F8',
+					300: '#869FEA',
+					400: '#637ED6',
+					500: '#3652bc',
+					600: '#273EA1',
+					700: '#1B2D87',
+					800: '#111E6D',
+					900: '#0A145A',
+				},
+				'theme-warning': {
+					100: '#FDFBD9',
+					200: '#FCF7B3',
+					300: '#F6EF8C',
+					400: '#EDE36D',
+					500: '#e2d440',
+					600: '#C2B42E',
+					700: '#A29520',
+					800: '#837614',
+					900: '#6C600C',
+				},
+				'theme-danger': {
+					100: '#FFE6D5',
+					200: '#FFC7AC',
+					300: '#FFA182',
+					400: '#FF7D63',
+					500: '#FF4130',
+					600: '#DB2323',
+					700: '#B71825',
+					800: '#930F25',
+					900: '#7A0925',
+				},
+				'theme-white': '#eee',
+				'theme-black': '#111',
+				'theme-accent': '#EE6C4D',
+				'theme-bg-dark': '#293241',
+			},
 			spacing: {
 				'viewport-padding': 'var(--page-wrapper-padding)',
 				'content-width': 'var(--content-width)',
@@ -43,18 +91,6 @@ const config: Config = {
 				xxs: '240px',
 				xs: '480px',
 			},
-			colors: {
-				'primary-color': 'var(--primary-color)',
-				'secondary-color': 'var(--secondary-color)',
-				decoration: 'var(--decoration-color)',
-				'background-color': 'var(--background-color)',
-				'text-color': 'var(--text-color)',
-				brand: 'var(--brand-color)',
-				'theme-white': 'var(--color-theme-white)',
-				'theme-olive': 'hsla(95, 85%, 25%, 0.1)',
-				'theme-black': 'var(--color-theme-black)',
-				'theme-glass': 'var(--color-theme-glass)',
-			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
 				'gradient-conic':
@@ -66,6 +102,43 @@ const config: Config = {
 			'spin-2s': 'spin 2s linear infinite',
 		},
 	},
-	plugins: [nextui()],
+
+	plugins: [
+		nextui({
+			themes: {
+				light: {
+					colors: {
+						primary: {
+							DEFAULT: '#bef264',
+							foreground: '#000000',
+						},
+						focus: '#bef264',
+						secondary: {
+							DEFAULT: '#ee6c4d',
+						},
+						background: {
+							DEFAULT: '#3D5A80',
+							// DEFAULT: '#293241',
+						},
+					},
+				},
+				dark: {
+					colors: {
+						primary: {
+							DEFAULT: '#bef264',
+							foreground: '#000000',
+						},
+						focus: '#bef264',
+						secondary: {
+							DEFAULT: '#ee6c4d',
+						},
+						background: {
+							DEFAULT: '#293241',
+						},
+					},
+				},
+			},
+		}),
+	],
 };
 export default config;

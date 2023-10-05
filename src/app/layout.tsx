@@ -18,7 +18,9 @@ function RootLayout({ children }: { children: ReactNode }) {
 			<MotionPreferencesConfig>
 				<html lang="en" className={savedTheme}>
 					<body>
-						<NextUIThemeProvider>{children}</NextUIThemeProvider>
+						<NextUIThemeProvider>
+							<div className="flex justify-center">{children}</div>
+						</NextUIThemeProvider>
 					</body>
 				</html>
 			</MotionPreferencesConfig>
