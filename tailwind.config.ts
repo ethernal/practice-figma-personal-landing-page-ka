@@ -74,6 +74,7 @@ const config: Config = {
 				'theme-black': '#111',
 				'theme-accent': '#EE6C4D',
 				'theme-bg-dark': '#293241',
+				'theme-bg-gray-dark': '#2F3746',
 			},
 			spacing: {
 				'viewport-padding': 'var(--page-wrapper-padding)',
