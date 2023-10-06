@@ -25,17 +25,17 @@ function HeroSection() {
 					</p>
 					<GetInTouchButton className="px-10 py-2 flex-1 self-start" />
 				</section>
-				<section className="relative">
+				<section className="grid grid-rows-1 grid-cols-1 self-end justify-self-center">
 					<Image
 						src={`/profile/profile-photo.png`}
 						removeWrapper={true}
 						alt="My profile"
 						width={250}
 						height={450}
-						className="absolute left-1/4 bottom-0"
+						className="row-start-1 row-end-2 col-start-1 col-end-1"
 						as={NextImage}
 					/>
-					<div className="absolute w-56 aspect-square bg-[#293241]/[0.5] bottom-12 rounded-full right-10"></div>
+					<div className="w-56 aspect-square -mt-8 bg-[#293241]/[0.5] rounded-full row-start-1 row-end-1 col-start-1 col-end-1"></div>
 				</section>
 			</div>
 		</div>
