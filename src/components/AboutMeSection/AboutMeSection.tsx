@@ -1,5 +1,4 @@
 'use client';
-import * as React from 'react';
 
 import { Divider, Image } from '@nextui-org/react';
 
