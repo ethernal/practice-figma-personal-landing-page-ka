@@ -1,28 +1,22 @@
 'use client';
-import * as React from 'react';
 
 import Logo from '@/components/Logo';
 import {
-	Button,
-	Divider,
-	Link,
-	Navbar,
-	NavbarBrand,
-	NavbarContent,
-	NavbarItem,
-	VisuallyHidden,
+    Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, VisuallyHidden
 } from '@nextui-org/react';
+
+import GetInTouchButton from '../GetInTouchButton';
 
 function NavigationMain() {
 	return (
-		<Navbar className="justify-between text-lg shadow-lg">
+		<Navbar className="justify-between shadow-lg ">
 			<NavbarBrand>
-				<Logo className="w-10 me-2 rounded-full" />
+				<Logo className="w-10 me-2 rounded-full min-w-[50px]" />
 				<VisuallyHidden className="font-bold text-inherit">
 					KuroiArt
 				</VisuallyHidden>
 			</NavbarBrand>
-			<NavbarContent className="hidden sm:flex gap-12">
+			<NavbarContent className="hidden sm:flex lg:gap-16 md:gap-12 gap-4 text-[clamp(0.825rem,-0.875rem+3vw,2.5rem)] transition-all duration-150">
 				<NavbarItem>
 					<Link className="text-theme-white" href="#">
 						Home
@@ -44,14 +38,7 @@ function NavigationMain() {
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<Button
-						as={Link}
-						className="text-theme-white bg-theme-accent rounded-md shadow-lg px-12 py-3"
-						href="#"
-						variant="flat"
-					>
-						Get in Touch
-					</Button>
+					<GetInTouchButton />
 				</NavbarItem>
 			</NavbarContent>
 		</Navbar>
