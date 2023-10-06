@@ -15,15 +15,40 @@ function WorkedForSection({ className }: { className?: string }) {
 				<Divider className="bg-theme-accent w-32" />
 			</section>
 			<section className="flex gap-10 px-32 pb-16 justify-center items-baseline">
-				<Image src="/logo/google.png" alt="Google" radius="none" height={20} />
-				<Image src="/logo/bolt.png" alt="Bolt" radius="none" height={20} />
-				<Image src="/logo/amazon.png" alt="Amazon" radius="none" height={20} />
-				<Image src="/logo/paypal.png" alt="PayPal" radius="none" height={20} />
+				<Image
+					src="/logo/google.png"
+					alt="Google"
+					radius="none"
+					height={20}
+					className="min-w-[5vw]"
+				/>
+				<Image
+					src="/logo/bolt.png"
+					alt="Bolt"
+					radius="none"
+					height={20}
+					className="min-w-[5vw]"
+				/>
+				<Image
+					src="/logo/amazon.png"
+					alt="Amazon"
+					radius="none"
+					height={20}
+					className="min-w-[5vw]"
+				/>
+				<Image
+					src="/logo/paypal.png"
+					alt="PayPal"
+					radius="none"
+					height={20}
+					className="min-w-[5vw]"
+				/>
 				<Image
 					src="/logo/netflix.png"
 					alt="Netflix"
 					radius="none"
 					height={40}
+					className="min-w-[5vw]"
 				/>
 			</section>
 		</div>
