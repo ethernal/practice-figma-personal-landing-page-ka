@@ -4,7 +4,7 @@ import { Divider, Image } from '@nextui-org/react';
 
 function AboutMeSection() {
 	return (
-		<div className="bg-theme-bg-dark p-10 w-full grid grid-cols-2 text-theme-white ">
+		<div className="bg-theme-bg-dark p-10 w-full grid grid-cols-1 gap-4 md:grid-cols-2 text-theme-white ">
 			<section className="flex justify-center items-center">
 				<Image
 					src="/profile/about-skills.png"
