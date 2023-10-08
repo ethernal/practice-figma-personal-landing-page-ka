@@ -1,15 +1,24 @@
 'use client';
 
 import Logo from '@/components/Logo';
+import { cn } from '@/utils/utils';
 import {
-    Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, VisuallyHidden
+	Link,
+	Navbar,
+	NavbarBrand,
+	NavbarContent,
+	NavbarItem,
+	VisuallyHidden,
 } from '@nextui-org/react';
 
 import CTAButton from '../CTAButton';
 
-function NavigationMain() {
+function NavigationMain({ className }: { className?: string }) {
 	return (
-		<Navbar className="justify-between shadow-lg ">
+		<Navbar
+			className={cn('justify-between shadow-lg', className)}
+			maxWidth="full"
+		>
 			<NavbarBrand>
 				<Logo className="w-10 me-2 rounded-full min-w-[50px]" />
 				<VisuallyHidden className="font-bold text-inherit">

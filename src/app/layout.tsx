@@ -19,7 +19,9 @@ function RootLayout({ children }: { children: ReactNode }) {
 				<html lang="en" className={savedTheme}>
 					<body>
 						<NextUIThemeProvider>
-							<div className="flex justify-center">{children}</div>
+							<div className="flex justify-center flex-col items-center">
+								{children}
+							</div>
 						</NextUIThemeProvider>
 					</body>
 				</html>

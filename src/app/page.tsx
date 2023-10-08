@@ -18,16 +18,17 @@ export const metadata = {
 
 async function Home() {
 	return (
-		<div className="w-4/5 max-w-7xl">
-			<NavigationMain />
-
-			<HeroSection />
-			<AboutMeSection />
-			<WorkedForSection className="bg-theme-bg-gray-dark" />
-			<RecentWorkSection className="bg-theme-bg-dark" />
-			<TestimonialsSection />
-			<ContactSection />
-		</div>
+		<>
+			<NavigationMain className="w-full" />
+			<div className="w-full max-w-7xl">
+				<HeroSection />
+				<AboutMeSection />
+				<WorkedForSection className="bg-theme-bg-gray-dark" />
+				<RecentWorkSection className="bg-theme-bg-dark" />
+				<TestimonialsSection />
+				<ContactSection />
+			</div>
+		</>
 	);
 }
 
