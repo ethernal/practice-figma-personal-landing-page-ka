@@ -6,7 +6,7 @@ import * as React from 'react';
 import { Image } from '@nextui-org/react';
 
 import ContentWrapper from '../ContentWrapper';
-import GetInTouchButton from '../GetInTouchButton';
+import CTAButton from '../CTAButton';
 
 function HeroSection() {
 	return (
@@ -25,7 +25,9 @@ function HeroSection() {
 							in the making! I can design games that are fun to play and highly
 							repayable!
 						</p>
-						<GetInTouchButton className="px-10 py-2 flex-1 self-start" />
+						<CTAButton className="px-10 py-2 flex-1 self-start">
+							Get in Touch
+						</CTAButton>
 					</section>
 					<section className="grid grid-rows-1 grid-cols-1 self-end justify-self-center">
 						<Image

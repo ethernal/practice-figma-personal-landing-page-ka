@@ -5,7 +5,7 @@ import {
     Link, Navbar, NavbarBrand, NavbarContent, NavbarItem, VisuallyHidden
 } from '@nextui-org/react';
 
-import GetInTouchButton from '../GetInTouchButton';
+import CTAButton from '../CTAButton';
 
 function NavigationMain() {
 	return (
@@ -38,7 +38,7 @@ function NavigationMain() {
 					</Link>
 				</NavbarItem>
 				<NavbarItem>
-					<GetInTouchButton />
+					<CTAButton>Get in Touch</CTAButton>
 				</NavbarItem>
 			</NavbarContent>
 		</Navbar>
