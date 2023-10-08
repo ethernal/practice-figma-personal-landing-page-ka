@@ -6,7 +6,7 @@ import remarkGfm from 'remark-gfm';
 
 export const SITE_PUBLISHED_YEAR_STRING = '2023';
 
-export const SITE_TITLE = 'sebee.dev';
+export const SITE_TITLE = 'KuroiArt';
 export const SITE_DOMAIN = 'http://localhost:3000';
 
 export const SITE_PATHS = {
@@ -16,7 +16,9 @@ export const SITE_PATHS = {
 	blogContentRelativeBasePath: './content/blog',
 };
 
-export const SOCIAL_X_HANDLE = '@spieczynski';
+export const SOCIAL_X_HANDLE = '@kuroiart';
+export const SOCIAL_FB_HANDLE = 'KuroiArt';
+export const SOCIAL_GH_HANDLE = 'kuroiart';
 
 export const MDXOptions = {
 	mdxOptions: {
