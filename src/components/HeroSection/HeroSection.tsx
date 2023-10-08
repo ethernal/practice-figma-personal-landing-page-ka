@@ -36,10 +36,10 @@ function HeroSection() {
 							alt="My profile"
 							width={250}
 							height={450}
-							className="row-start-1 row-end-2 col-start-1 col-end-1"
+							className="row-start-1 row-end-2 col-start-1 col-end-1 self-end pointer-events-none"
 							as={NextImage}
 						/>
-						<div className="w-56 aspect-square -mt-8 bg-[#293241]/[0.5] rounded-full row-start-1 row-end-1 col-start-1 col-end-1"></div>
+						<div className="w-40 xs:w-48 sm:w-56 justify-self-center aspect-square -mt-8 bg-[#293241]/[0.5] rounded-full row-start-1 row-end-1 col-start-1 col-end-1"></div>
 					</section>
 				</div>
 			</div>
