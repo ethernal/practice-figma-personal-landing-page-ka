@@ -76,6 +76,7 @@ const config: Config = {
 				'theme-bg-dark': '#293241',
 				'theme-bg-gray-dark': '#2F3746',
 				'theme-badge-dark': '#3D5A80',
+				'theme-inactive': '#C4C4C4',
 			},
 			spacing: {
 				'viewport-padding': 'var(--page-wrapper-padding)',
