@@ -4,12 +4,13 @@ import * as React from 'react';
 import { cn } from '@/utils/utils';
 import { Card, CardFooter, Divider, Image } from '@nextui-org/react';
 
+import ContentWrapper from '../ContentWrapper';
 import PortfolioItem from '../PortfolioItem';
 
 function RecentWorkSection({ className }: { className?: string }) {
 	return (
-		<>
-			<section className={cn('py-12 px-10', className)}>
+		<ContentWrapper className="bg-theme-bg-dark px-10">
+			<section className={cn('py-12', className)}>
 				<h2 className="text-theme-white text-2xl pb-4">My Recent Works</h2>
 				<Divider className="bg-theme-accent mb-10 w-40" />
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -53,7 +54,7 @@ function RecentWorkSection({ className }: { className?: string }) {
 					</button>
 				</section>
 			</section>
-		</>
+		</ContentWrapper>
 	);
 }
 
