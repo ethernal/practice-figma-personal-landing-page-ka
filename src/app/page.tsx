@@ -3,6 +3,7 @@ import React from 'react';
 import AboutMeSection from '@/components/AboutMeSection';
 import ContactSection from '@/components/ContactSection';
 import ContentWrapper from '@/components/ContentWrapper';
+import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection';
 import NavigationMain from '@/components/NavigationMain';
 import RecentWorkSection from '@/components/RecentWorkSection';
@@ -28,6 +29,7 @@ async function Home() {
 				<TestimonialsSection />
 				<ContactSection />
 			</div>
+			<Footer />
 		</>
 	);
 }
