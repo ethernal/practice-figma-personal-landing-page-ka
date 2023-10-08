@@ -14,7 +14,7 @@ function WorkedForSection({ className }: { className?: string }) {
 				</h2>
 				<Divider className="bg-theme-accent w-32" />
 			</section>
-			<section className="flex gap-10 px-32 pb-16 justify-center items-baseline">
+			<section className="flex gap-10 px-32 pb-16 justify-center items-baseline flex-wrap md:flex-nowrap">
 				<Image
 					src="/logo/google.png"
 					alt="Google"
