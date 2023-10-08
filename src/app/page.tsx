@@ -1,6 +1,7 @@
 import React from 'react';
 
 import AboutMeSection from '@/components/AboutMeSection';
+import ContactSection from '@/components/ContactSection';
 import ContentWrapper from '@/components/ContentWrapper';
 import HeroSection from '@/components/HeroSection';
 import NavigationMain from '@/components/NavigationMain';
@@ -25,6 +26,7 @@ async function Home() {
 			<WorkedForSection className="bg-theme-bg-gray-dark" />
 			<RecentWorkSection className="bg-theme-bg-dark" />
 			<TestimonialsSection />
+			<ContactSection />
 		</div>
 	);
 }
