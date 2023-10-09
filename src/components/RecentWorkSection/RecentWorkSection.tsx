@@ -9,9 +9,9 @@ import PortfolioItem from '../PortfolioItem';
 
 function RecentWorkSection({ className }: { className?: string }) {
 	return (
-		<ContentWrapper className="bg-theme-bg-dark px-10">
-			<section className={cn('py-12', className)}>
-				<h2 className="text-theme-white text-2xl pb-4">My Recent Works</h2>
+		<ContentWrapper className={cn('px-10', className)}>
+			<section className="">
+				<h2 className="text-2xl pb-4">My Recent Works</h2>
 				<Divider className="bg-theme-accent mb-10 w-40 h-0.5" />
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 					<PortfolioItem

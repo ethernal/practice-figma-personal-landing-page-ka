@@ -18,7 +18,7 @@ function HeroSection({ className }: { className?: string }) {
 						Create your games in{' '}
 						<span className="text-theme-accent">less than 12days</span>
 					</h2>
-					<p className="text-theme-white">
+					<p className="">
 						Hey, I’m Rafał Pieczyński. A board game developer with 4 years
 						experience designing great games like &ldquo;Frostpunk Board Game",
 						Apex Board Game or "Don't Starve Board Game" and others are in the

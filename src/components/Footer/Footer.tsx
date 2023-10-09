@@ -5,12 +5,7 @@ import { AiOutlineTwitter as TwitterIcon } from 'react-icons/ai';
 import { BiLogoFacebook as FacebookIcon } from 'react-icons/bi';
 import { FiGithub as GithubIcon } from 'react-icons/fi';
 
-import {
-	SITE_TITLE,
-	SOCIAL_FB_HANDLE,
-	SOCIAL_GH_HANDLE,
-	SOCIAL_X_HANDLE,
-} from '@/constants';
+import { SITE_TITLE, SOCIAL_FB_HANDLE, SOCIAL_GH_HANDLE, SOCIAL_X_HANDLE } from '@/constants';
 import { cn } from '@/utils/utils';
 
 import Logo from '../Logo';
@@ -19,7 +14,7 @@ function Footer({ className }: { className?: string }) {
 	return (
 		<div
 			className={cn(
-				'bg-theme-bg-dark w-full py-16 px-6 text-theme-white font-bold text-lg flex flex-col sm:flex-row gap-8 sm:gap-8 justify-between items-center',
+				'w-full py-16 px-6 font-bold text-lg flex flex-col sm:flex-row gap-8 sm:gap-8 justify-between items-center',
 				className,
 			)}
 		>

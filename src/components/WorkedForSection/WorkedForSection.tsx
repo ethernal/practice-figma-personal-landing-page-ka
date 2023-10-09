@@ -11,10 +11,8 @@ function WorkedForSection({ className }: { className?: string }) {
 	return (
 		<ContentWrapper className={cn(className)}>
 			<section className="flex justify-center items-center gap-1 flex-col">
-				<h2 className="text-theme-white text-2xl pb-4">
-					Companies I have worked for
-				</h2>
-				<Divider className="bg-theme-accent w-32 h-0.5" />
+				<h2 className=" text-2xl pb-4">Companies I have worked for</h2>
+				<Divider className="bg-theme-accent w-32 h-0.5 mb-12" />
 			</section>
 			<section className="flex gap-10 px-32 pb-16 justify-center items-baseline flex-wrap md:flex-nowrap">
 				<Image

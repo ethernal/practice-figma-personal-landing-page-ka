@@ -17,16 +17,16 @@ export const metadata = {
 async function Home() {
 	return (
 		<>
-			<NavigationMain className="w-full" />
+			<NavigationMain className="w-full bg-theme-light-background-light dark:bg-theme-dark-background-light" />
 			<div className="w-full max-w-7xl">
-				<HeroSection />
-				<AboutMeSection />
-				<WorkedForSection className="bg-theme-bg-gray-dark" />
-				<RecentWorkSection className="bg-theme-bg-dark" />
-				<TestimonialsSection className="bg-theme-bg-gray-dark" />
-				<ContactSection />
+				<HeroSection className="dark:bg-theme-dark-background-light" />
+				<AboutMeSection className="bg-theme-light-background-light text-theme-light-text-light dark:bg-theme-dark-background-dark" />
+				<WorkedForSection className="dark:bg-theme-dark-background-gray" />
+				<RecentWorkSection className="bg-theme-light-background-light dark:bg-theme-dark-background-dark" />
+				<TestimonialsSection className="dark:bg-theme-dark-background-gray" />
+				<ContactSection className="bg-theme-light-background-light dark:bg-theme-dark-background-light" />
 			</div>
-			<Footer />
+			<Footer className="bg-theme-dark-background-gray text-theme-white" />
 		</>
 	);
 }

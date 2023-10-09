@@ -10,7 +10,14 @@ function ContentWrapper({
 	className?: string;
 }) {
 	return (
-		<div className={cn('px-10 text-theme-white', className)}>{children}</div>
+		<div
+			className={cn(
+				'px-10 py-10 text-theme-light-black dark:text-theme-dark-text-light',
+				className,
+			)}
+		>
+			{children}
+		</div>
 	);
 }
 

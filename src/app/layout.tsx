@@ -17,9 +17,13 @@ function RootLayout({ children }: { children: ReactNode }) {
 		<ThemeProvider initialTheme={savedTheme}>
 			<MotionPreferencesConfig>
 				<html lang="en" className={savedTheme}>
-					<body>
+					<body className="selection:bg-theme-accent selection:text-theme-light-black dark:selection:text-theme-dark-white">
 						<NextUIThemeProvider>
-							<div className="flex justify-center flex-col items-center">
+							<div
+								className="flex justify-center flex-col items-center
+							 text-theme-light-text-light bg-theme-light-background-dark
+							  dark:bg-theme-dark-background-light dark:text-theme-dark-text-light"
+							>
 								{children}
 							</div>
 						</NextUIThemeProvider>

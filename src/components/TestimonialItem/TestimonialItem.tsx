@@ -6,7 +6,7 @@ import { Image } from '@nextui-org/react';
 
 function TestimonialItem() {
 	return (
-		<div className="grid grid-rows-[1fr_2fr] gap-4 bg-black/40 px-4 py-4">
+		<div className="grid grid-rows-[1fr_2fr] gap-4 bg-white dark:bg-black/40 px-4 py-4">
 			<header className="flex justify-between">
 				<div className="flex gap-3">
 					<Image
@@ -17,7 +17,9 @@ function TestimonialItem() {
 					<div className="grid grid-cols-1 gap-1 [&>*]:p-0 [&>*]:m-0">
 						<div>
 							<p className="text-lg">Full name</p>
-							<p className="text-sm text-theme-white/60">Position</p>
+							<p className="text-sm text-theme-light-text-gray dark:text-theme-dark-text-gray">
+								Position
+							</p>
 						</div>
 					</div>
 				</div>
