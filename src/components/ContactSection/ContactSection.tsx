@@ -11,7 +11,7 @@ function ContactSection({ className }: { className?: string }) {
 		<ContentWrapper>
 			<div className="pt-12 pb-6 text-3xl flex flex-col gap-4">
 				<h2>Tell me about your project</h2>
-				<Divider className="bg-theme-accent w-72" />
+				<Divider className="bg-theme-accent w-72 h-0.5" />
 			</div>
 			<div>
 				<form className="flex flex-col gap-4 pb-10">

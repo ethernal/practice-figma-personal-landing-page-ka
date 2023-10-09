@@ -1,12 +1,13 @@
 'use client';
 
+import { cn } from '@/utils/utils';
 import { Divider, Image } from '@nextui-org/react';
 
 import ContentWrapper from '../ContentWrapper';
 
-function AboutMeSection() {
+function AboutMeSection({ className }: { className?: string }) {
 	return (
-		<ContentWrapper className="bg-theme-bg-dark p-10 py-10">
+		<ContentWrapper className={cn('bg-theme-bg-dark p-10 py-10', className)}>
 			<div className=" w-full grid grid-cols-1 gap-4 md:grid-cols-2 text-theme-white ">
 				<section className="flex justify-center items-center">
 					<Image
@@ -17,7 +18,7 @@ function AboutMeSection() {
 				</section>
 				<section className="flex flex-col gap-4">
 					<h2 className="text-3xl">About me</h2>
-					<Divider className="bg-theme-accent [&>p]:text-lg" />
+					<Divider className="bg-theme-accent [&>p]:text-lg h-0.5" />
 					<p>
 						My passion for building websites started since 2013 and since then i
 						have helped companies around the world build amazing websites and

@@ -5,14 +5,16 @@ import * as React from 'react';
 import { cn } from '@/utils/utils';
 import { Divider, Image } from '@nextui-org/react';
 
+import ContentWrapper from '../ContentWrapper';
+
 function WorkedForSection({ className }: { className?: string }) {
 	return (
-		<div className={cn(className)}>
-			<section className="flex justify-center items-center gap-1 py-12 flex-col">
-				<h2 className="text-theme-white text-2xl">
+		<ContentWrapper className={cn(className)}>
+			<section className="flex justify-center items-center gap-1 flex-col">
+				<h2 className="text-theme-white text-2xl pb-4">
 					Companies I have worked for
 				</h2>
-				<Divider className="bg-theme-accent w-32" />
+				<Divider className="bg-theme-accent w-32 h-0.5" />
 			</section>
 			<section className="flex gap-10 px-32 pb-16 justify-center items-baseline flex-wrap md:flex-nowrap">
 				<Image
@@ -51,7 +53,7 @@ function WorkedForSection({ className }: { className?: string }) {
 					className="min-w-[5vw]"
 				/>
 			</section>
-		</div>
+		</ContentWrapper>
 	);
 }
 
