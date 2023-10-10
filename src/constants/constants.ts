@@ -76,3 +76,23 @@ export const DARK_TOKENS: CSSProperties = {
 	...DARK_COLORS,
 	...DARK_SHADOWS,
 };
+
+export const NAVIGATION_ITEMS = [
+	{
+		label: 'Home',
+		href: '/',
+	},
+	{
+		label: 'About me',
+		href: '/about',
+	},
+	{
+		label: 'Works',
+		href: '/portfolio',
+	},
+	{
+		label: 'Blog',
+		href: '/blog',
+	},
+];
+
