@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+Design is based on: https://www.figma.com/file/L7JBy7VDsQRg2BMAmaUi0r/Web-Design-Practice-(Community)?type=design&node-id=20-11&mode=design&t=96msp0aOpaC9h4kV-0
+
+Both dark and light mode is implemented as well as responsive version of the website.
+
+Elements of the design are interactive, not only placeholders.
+
 ## Getting Started
 
 First, run the development server:
