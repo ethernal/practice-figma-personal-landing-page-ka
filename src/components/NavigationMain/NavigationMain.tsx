@@ -68,7 +68,10 @@ function NavigationMain({ className }: { className?: string }) {
 
 			<NavbarMenu>
 				{NAVIGATION_ITEMS.map((item) => (
-					<NavbarMenuItem key={item.label.replaceAll(' ', '-')}>
+					<NavbarMenuItem
+						key={item.label.replaceAll(' ', '-')}
+						className="flex justify-center py-4"
+					>
 						<Link
 							href={item.href}
 							className="text-theme-light-text-dark dark:text-theme-dark-text-light"
@@ -77,6 +80,9 @@ function NavigationMain({ className }: { className?: string }) {
 						</Link>
 					</NavbarMenuItem>
 				))}
+				<NavbarMenuItem className="flex justify-center py-4">
+					<ThemeSwitch />
+				</NavbarMenuItem>
 			</NavbarMenu>
 		</Navbar>
 	);
